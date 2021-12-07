@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Covid Resources</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Covid Resources</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Update Resources</h2>
+
+                <form action="/fetch" method="post">
+                    <select name="hospital">
+                        {% for hospital in hospitals%}
+
+                        <option value="{{hospital.NAME}}">{{hospital.NAME}}</option>
+                        
+
+                        {% endfor %}
+                        
+                    </select>
+                    <button type="submit">Fetch</button>
+                </form>
+
+
+
+            </div>
+        </div>
+    </body>
+</html>

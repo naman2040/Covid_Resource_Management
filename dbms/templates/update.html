@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Covid Resources</title>
+        <style>
+            select{
+                height: 50px;
+                width: 350px;
+                padding: 10px;
+                margin: 20px;
+                border-radius: 10px;
+                border-width: 2px;
+                border-style: groove;
+                
+            }
+            option{
+                font-size: 20px;
+                padding: 5px;
+                
+            }
+            button{
+                padding: 15px;
+                width: 200px;
+                border-radius: 10px;
+                border-width: 2px;
+                border-style: groove;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Covid Resources</h1>
+        </div>
+        <center>
+        <fieldset style="width: 1850px; border-radius: 20px;">
+            <legend><font size=6 face="TimesNewRoman">Hospital Resources Dashboard</font></legend>
+
+            <div class="container">
+                <div class="section">
+                    <h2>Update Resources of {{hospital}}</h2>
+                </div>
+                <br>
+                <br>
+                
+                <form action="/update" method="post" padding="20px" margin="10px">
+    
+                    <select name="OXYGEN" >
+                        <option value={{resources['OXYGEN']}} selected="selected"><font size=6 face="TimesNewRoman">Currently Available Oxygen Cylinders are {{resources['OXYGEN']}}</font></option>
+                        {% for i in range(0, 500)%}
+                            <option value={{i}}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+                    
+                    <select name="REMDESIVIR" >
+                        <option value= {{resources['REMDESIVIR']}} selected="selected"><font size=6 face="TimesNewRoman">Currently Available Remdesivir Vials are {{resources['REMDESIVIR']}}</font></option>
+                        {% for i in range(0, 1500)%}
+                            <option value={{i}}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+    
+                    <select name="VENTILATOR" >
+                        <option value={{resources['VENTILATOR']}} selected="selected"><font size=6 face="TimesNewRoman">Currently Available Ventilators are {{resources['VENTILATOR']}}</font></option>
+                        {% for i in range(0, 40)%}
+                            <option value={{i}}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+    
+                    <select name="BEDS" >
+                        <option value={{resources['BEDS']}} selected="selected"><font size=6 face="TimesNewRoman">Currently Available BEDS are {{resources['BEDS']}}</font></option>
+                        {% for i in range(0, 250)%}
+                            <option value={{i}}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <button type="submit">Update Values</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                </form>
+            </div>
+
+        </fieldset>
+        <marquee></marquee>
+        </center>
+    </body>
+</html>
