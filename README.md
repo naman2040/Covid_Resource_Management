@@ -7,7 +7,7 @@ Delhi, Kolkata, Mumbai and Bangalore.
 #We have used SQL, Python, Flask, HTML, CSS to 
 create user Friendly Interface.
 
-#COVID RESOURCE MANAGEMENT”
+COVID RESOURCE MANAGEMENT”
 Database comprises of 5 tables:- 
   
     •HOSPITAL
@@ -16,21 +16,21 @@ Database comprises of 5 tables:-
     •RESOURCES
     •COVID_STATUS 
 
-#And contains information about  their:-
+And contains information about  their:-
 
-  •Registered ID
-  •Location 
-  •Ownership
-  •Contact
-  •Ventilator
-  •Blood Bank
-  •Oxygen
-  •Remdesivir
-  •Vaccination Dose
-  •Beds 
-  •Active Cases
-  •Mortality Rate 
-  •Recovery Rate
+    •Registered ID
+    •Location 
+    •Ownership
+    •Contact
+    •Ventilator
+    •Blood Bank
+    •Oxygen
+    •Remdesivir
+    •Vaccination Dose
+    •Beds 
+    •Active Cases
+    •Mortality Rate 
+    •Recovery Rate
 
   
   
