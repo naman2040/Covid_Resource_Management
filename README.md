@@ -10,11 +10,11 @@ create user Friendly Interface.
 #COVID RESOURCE MANAGEMENT”
 Database comprises of 5 tables:- 
   
-  •HOSPITAL
-  •BLOOD_BANK
-  •VACCINATION
-  •RESOURCES
-  •COVID_STATUS 
+    •HOSPITAL
+    •BLOOD_BANK
+    •VACCINATION
+    •RESOURCES
+    •COVID_STATUS 
 
 #And contains information about  their:-
 
