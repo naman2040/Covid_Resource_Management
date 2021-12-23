@@ -33,7 +33,9 @@ And contains information about  their:-
     •Recovery Rate
 
   
-  
+Using the database, information about available beds, doses, ventilator, oxygen cylinder, blood can be extracted successfully with help of SQL .
+Thereby helps in generating desire insights to serve patient’s request in meantime hence saving a lot of lives.
+
   
   
   
